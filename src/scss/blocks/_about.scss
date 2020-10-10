@@ -1,6 +1,16 @@
 .about {
-    padding: 120px 0 80px 0;
+    padding: 40px 0 20px 0;
     text-align: center;
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        padding: 80px 0 40px 0;
+    }
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        padding: 120px 0 80px 0;
+    }
 }
 
 .about__text {
@@ -16,9 +26,17 @@
 
 .about img {
     margin: 0 auto;
-    height: 500px;
 }
 
 .about__table {
     margin-bottom: 30px;
+}
+
+.about__result {
+    margin-bottom: 40px;
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        margin-bottom: 80px;
+    }
 }

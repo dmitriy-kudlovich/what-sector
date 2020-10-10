@@ -1,7 +1,19 @@
 .header {
     margin: 0 auto;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
     text-align: center;
+
+    // Медиазапрос для планшетов
+    @media (min-width: 798px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    // Медиазапрос для десктопов
+    @media (min-width: 1230px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
