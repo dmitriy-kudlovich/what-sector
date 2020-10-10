@@ -1,0 +1,18 @@
+include ./mixins.pug
+
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title #{title}
+        link(rel="stylesheet" href="css/main.css")
+        link(rel="stylesheet" href="libs/fontawesome-free-5.15.1-web/css/all.min.css")
+        link(href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet")
+        //-Шрифт для логотипа:
+        link(href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet")
+    body
+        block content
+        script(src="js/main.js")

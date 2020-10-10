@@ -1,0 +1,78 @@
+.timeline {
+    margin-bottom: 100px;
+}
+
+.timeline__row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin-bottom: 60px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        border: 1px dashed #000;
+        top: 100%;
+        bottom: -60px;
+        left: 50.5%;
+        z-index: -1;
+    }
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.timeline__row-icon {
+    margin-right: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 70px;
+    text-align: center;
+    width: 70px;
+}
+
+.timeline__row:nth-child(even) .timeline__row-icon {
+    margin-right: 0;
+    margin-left: 35px;
+}
+
+.timeline__row-text {
+    text-align: left;
+    width: 495px;
+}
+
+.timeline__row:nth-child(even) .timeline__row-text {
+    text-align: right;
+    width: 505px;
+}
+
+.timeline__row-text-heading {
+    margin-bottom: 5px;
+    font-family: "Amatic SC", cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.timeline__row-text-desc {
+    font-family: "Amatic SC", cursive;
+    font-size: 35px;
+}
+
+.timeline__row-text-desc p {
+    font-size: 26px;
+}
+
+.timeline__row-text-desc i {
+    vertical-align: middle;
+    font-size: 15px;
+}

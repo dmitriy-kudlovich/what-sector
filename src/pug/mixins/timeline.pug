@@ -1,0 +1,8 @@
+mixin timeline(icon, heading)
+    .timeline__row
+        .timeline__row-icon
+            i(class= icon)
+        .timeline__row-text
+            .timeline__row-text-heading= heading
+            .timeline__row-text-desc
+                block

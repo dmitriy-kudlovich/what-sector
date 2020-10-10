@@ -1,0 +1,15 @@
+extends ./../layouts/main.pug
+
+block variables
+    - const title = "Какой сектор?";
+
+
+block content
+    include ../sections/nav-panel.pug
+    include ../sections/header.pug
+
+    main.main
+        include ../sections/use-area.pug
+        include ../sections/about.pug
+
+    include ../sections/footer.pug
